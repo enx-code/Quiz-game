@@ -94,7 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
   function saveHighscore(initials, score) {
     // Implement your logic to save the highscore, e.g., using local storage
     // This example assumes that highscores are stored as an array of objects
-    const highscores = JSON.parse(localStorage.getItem("highscores")) || [];
+    const highscores = JSON.parse(localStorage.getItem("score")) || [];
     highscores.push({ initials: initials, score: score });
     localStorage.setItem("highscores", JSON.stringify(highscores));
   }
